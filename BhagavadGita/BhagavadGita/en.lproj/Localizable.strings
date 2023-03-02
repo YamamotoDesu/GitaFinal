@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  BhagavadGita
+
+  Created by 山本響 on 2023/03/02.
+  
+*/
+
+// ContentView
+"CpntentView.bhagavad_gita_chapter %@" = "Bhagavad gita Chapter: %@";

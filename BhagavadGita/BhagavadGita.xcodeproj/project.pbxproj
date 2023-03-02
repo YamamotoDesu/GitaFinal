@@ -12,6 +12,7 @@
 		7B85C0BB29AF63E1001D019B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */; };
 		7B85C0BE29B0B188001D019B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7B85C0BD29B0B188001D019B /* Swinject */; };
 		7B85C0C029B0B1FF001D019B /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0BF29B0B1FF001D019B /* Injection.swift */; };
+		7B85C0C329B0C968001D019B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B85C0C529B0C968001D019B /* Localizable.strings */; };
 		7BBCE2C929ACE588004DFC31 /* BhagavadGitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBCE2C829ACE588004DFC31 /* BhagavadGitaApp.swift */; };
 		7BBCE2CB29ACE588004DFC31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBCE2CA29ACE588004DFC31 /* ContentView.swift */; };
 		7BBCE2CD29ACE58D004DFC31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BBCE2CC29ACE58D004DFC31 /* Assets.xcassets */; };
@@ -45,6 +46,8 @@
 		7B85C0B729AE435F001D019B /* BGLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGLogger.swift; sourceTree = "<group>"; };
 		7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		7B85C0BF29B0B1FF001D019B /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		7B85C0C429B0C968001D019B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B85C0C629B0C96D001D019B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7BBCE2C529ACE588004DFC31 /* BhagavadGita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BhagavadGita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BBCE2C829ACE588004DFC31 /* BhagavadGitaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaApp.swift; sourceTree = "<group>"; };
 		7BBCE2CA29ACE588004DFC31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 				7B85C0B729AE435F001D019B /* BGLogger.swift */,
 				7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */,
 				7B85C0BF29B0B1FF001D019B /* Injection.swift */,
+				7B85C0C529B0C968001D019B /* Localizable.strings */,
 			);
 			path = BhagavadGita;
 			sourceTree = "<group>";
@@ -240,6 +244,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 7BBCE2BC29ACE588004DFC31;
 			packageReferences = (
@@ -264,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BBCE2D029ACE58D004DFC31 /* Preview Assets.xcassets in Resources */,
+				7B85C0C329B0C968001D019B /* Localizable.strings in Resources */,
 				7BBCE2CD29ACE58D004DFC31 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +357,18 @@
 			targetProxy = 7BBCE2E529ACE58E004DFC31 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B85C0C529B0C968001D019B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B85C0C429B0C968001D019B /* en */,
+				7B85C0C629B0C96D001D019B /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7BBCE2EC29ACE58E004DFC31 /* Debug */ = {
