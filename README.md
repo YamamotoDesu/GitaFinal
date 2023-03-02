@@ -132,3 +132,12 @@ class ContentViewModel: ObservableObject {
     }
 }
 ```
+
+
+
+
+
+9:53 / 10:14
+
+
+[Build iOS App from scratch - Part 5 - Localization in SwiftUI](https://www.youtube.com/watch?v=eCBRBsdWfN8)
