@@ -74,3 +74,61 @@ class BGLogger: BGLoggerType {
     }
 }
 ```
+
+[Build iOS App from scratch - Part 4 - Dependency container || Swinject || Singleton](https://www.youtube.com/watch?v=c_tRpdt9GGM)
+
+```swift
+import Foundation
+import Swinject
+
+final class Injection {
+    static let shared = Injection()
+    var container: Container {
+        get {
+            if _container == nil {
+                _container = buildContainer()
+            }
+            return _container!
+        }
+
+        set {
+            _container = newValue
+        }
+    }
+
+    private var _container: Container?
+
+    private func buildContainer() -> Container {
+        let container = Container()
+        container.register(BGLoggerType.self) { _ in
+            return BGLogger()
+        }
+        return container
+    }
+}
+
+@propertyWrapper struct Injected<Dependency> {
+    let wrappedValue: Dependency
+
+    init() {
+        self.wrappedValue = Injection.shared.container.resolve(Dependency.self)!
+    }
+}
+```
+
+```swift
+import Foundation
+
+class ContentViewModel: ObservableObject {
+
+    @Injected private var logger: BGLoggerType
+
+//    init(logger: BGLoggerType = BGLogger()) {
+//        self.logger = logger
+//    }
+
+    func onAppear() {
+        logger.info("View is loaded")
+    }
+}
+```
