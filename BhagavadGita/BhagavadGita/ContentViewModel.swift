@@ -9,11 +9,11 @@ import Foundation
 
 class ContentViewModel: ObservableObject {
 
-    private var logger: BGLoggerType
+    @Injected private var logger: BGLoggerType
 
-    init(logger: BGLoggerType = BGLogger()) {
-        self.logger = logger
-    }
+//    init(logger: BGLoggerType = BGLogger()) {
+//        self.logger = logger
+//    }
 
     func onAppear() {
         logger.info("View is loaded")

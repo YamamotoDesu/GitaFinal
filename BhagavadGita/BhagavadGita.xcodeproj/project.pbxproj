@@ -10,6 +10,8 @@
 		7B85C0B629AE41D5001D019B /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 7B85C0B529AE41D5001D019B /* SwiftyBeaver */; };
 		7B85C0B829AE4360001D019B /* BGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0B729AE435F001D019B /* BGLogger.swift */; };
 		7B85C0BB29AF63E1001D019B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */; };
+		7B85C0BE29B0B188001D019B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7B85C0BD29B0B188001D019B /* Swinject */; };
+		7B85C0C029B0B1FF001D019B /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0BF29B0B1FF001D019B /* Injection.swift */; };
 		7BBCE2C929ACE588004DFC31 /* BhagavadGitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBCE2C829ACE588004DFC31 /* BhagavadGitaApp.swift */; };
 		7BBCE2CB29ACE588004DFC31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBCE2CA29ACE588004DFC31 /* ContentView.swift */; };
 		7BBCE2CD29ACE58D004DFC31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BBCE2CC29ACE58D004DFC31 /* Assets.xcassets */; };
@@ -42,6 +44,7 @@
 /* Begin PBXFileReference section */
 		7B85C0B729AE435F001D019B /* BGLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGLogger.swift; sourceTree = "<group>"; };
 		7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		7B85C0BF29B0B1FF001D019B /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		7BBCE2C529ACE588004DFC31 /* BhagavadGita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BhagavadGita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BBCE2C829ACE588004DFC31 /* BhagavadGitaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaApp.swift; sourceTree = "<group>"; };
 		7BBCE2CA29ACE588004DFC31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 			files = (
 				7BBCE2F929AE2F66004DFC31 /* BGUtility in Frameworks */,
 				7B85C0B629AE41D5001D019B /* SwiftyBeaver in Frameworks */,
+				7B85C0BE29B0B188001D019B /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +118,7 @@
 				7BBCE2CE29ACE58D004DFC31 /* Preview Content */,
 				7B85C0B729AE435F001D019B /* BGLogger.swift */,
 				7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */,
+				7B85C0BF29B0B1FF001D019B /* Injection.swift */,
 			);
 			path = BhagavadGita;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			packageProductDependencies = (
 				7BBCE2F829AE2F66004DFC31 /* BGUtility */,
 				7B85C0B529AE41D5001D019B /* SwiftyBeaver */,
+				7B85C0BD29B0B188001D019B /* Swinject */,
 			);
 			productName = BhagavadGita;
 			productReference = 7BBCE2C529ACE588004DFC31 /* BhagavadGita.app */;
@@ -239,6 +245,7 @@
 			packageReferences = (
 				7BBCE2F729AE2F66004DFC31 /* XCRemoteSwiftPackageReference "BGUtility" */,
 				7B85C0B429AE41D4001D019B /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+				7B85C0BC29B0B188001D019B /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 7BBCE2C629ACE588004DFC31 /* Products */;
 			projectDirPath = "";
@@ -303,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B85C0C029B0B1FF001D019B /* Injection.swift in Sources */,
 				7BBCE2D529ACE58D004DFC31 /* BhagavadGita.xcdatamodeld in Sources */,
 				7BBCE2D229ACE58D004DFC31 /* Persistence.swift in Sources */,
 				7B85C0BB29AF63E1001D019B /* ContentViewModel.swift in Sources */,
@@ -643,6 +651,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		7B85C0BC29B0B188001D019B /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		7BBCE2F729AE2F66004DFC31 /* XCRemoteSwiftPackageReference "BGUtility" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/YamamotoDesu/BGUtility.git";
@@ -658,6 +674,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7B85C0B429AE41D4001D019B /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
 			productName = SwiftyBeaver;
+		};
+		7B85C0BD29B0B188001D019B /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B85C0BC29B0B188001D019B /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 		7BBCE2F829AE2F66004DFC31 /* BGUtility */ = {
 			isa = XCSwiftPackageProductDependency;
