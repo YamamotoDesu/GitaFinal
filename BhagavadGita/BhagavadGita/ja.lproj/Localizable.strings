@@ -8,3 +8,4 @@
 
 // ContentView
 "CpntentView.bhagavad_gita_chapter %@" = "Bhagavad gita チャプター: %@";
+"CpntentView.bhagavad_gita_title" = "Bhagavad gita";

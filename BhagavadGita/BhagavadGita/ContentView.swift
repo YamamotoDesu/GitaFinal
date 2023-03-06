@@ -15,10 +15,14 @@ struct ContentView: View {
     var count = "1"
     var body: some View {
         NavigationView {
-            Text("CpntentView.bhagavad_gita_chapter \(count)")
-                .onAppear {
-                    viewModel.onAppear()
-                }
+            VStack {
+                Text(L10n.CpntentView.bhagavadGitaChapter(count))
+                Text(L10n.CpntentView.bhagavadGitaTitle)
+                Text("CpntentView.bhagavad_gita_chapter \(count)")
+            }
+            .onAppear {
+                viewModel.onAppear()
+            }
         }
     }
 }
