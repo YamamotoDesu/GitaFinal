@@ -133,11 +133,14 @@ class ContentViewModel: ObservableObject {
 }
 ```
 
-
-
-
-
-9:53 / 10:14
-
-
 [Build iOS App from scratch - Part 5 - Localization in SwiftUI](https://www.youtube.com/watch?v=eCBRBsdWfN8)
+
+[Build iOS App from scratch - Part 6- Localization - Best approach using SwiftGen](https://www.youtube.com/watch?v=7sxHn0mF_fI)
+
+```
+if which swiftgen >/dev/null; then
+  swiftgen
+else
+  echo "warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen"
+fi
+```
