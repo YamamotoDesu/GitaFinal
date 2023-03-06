@@ -144,3 +144,13 @@ else
   echo "warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen"
 fi
 ```
+
+[Build iOS App from scratch - Part 7- SwiftFormat - Clean Code in Swift](https://www.youtube.com/watch?v=7k3IngPPP2A)
+https://github.com/nicklockwood/SwiftFormat/blob/master/Rules.md
+```
+if which swiftformat >/dev/null; then
+  swiftformat .
+else
+  echo "warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat"
+fi
+```
