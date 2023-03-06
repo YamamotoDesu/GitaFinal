@@ -5,11 +5,10 @@
 //  Created by 山本響 on 2023/02/27.
 //
 
-import SwiftUI
 import BGUtility
+import SwiftUI
 
 struct ContentView: View {
-
     @ObservedObject var viewModel = ContentViewModel()
 
     var count = "1"

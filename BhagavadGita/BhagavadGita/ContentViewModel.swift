@@ -8,7 +8,6 @@
 import Foundation
 
 class ContentViewModel: ObservableObject {
-
     @Injected private var logger: BGLoggerType
 
 //    init(logger: BGLoggerType = BGLogger()) {

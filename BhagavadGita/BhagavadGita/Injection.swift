@@ -28,7 +28,7 @@ final class Injection {
     private func buildContainer() -> Container {
         let container = Container()
         container.register(BGLoggerType.self) { _ in
-            return BGLogger()
+            BGLogger()
         }
         return container
     }
@@ -38,6 +38,6 @@ final class Injection {
     let wrappedValue: Dependency
 
     init() {
-        self.wrappedValue = Injection.shared.container.resolve(Dependency.self)!
+        wrappedValue = Injection.shared.container.resolve(Dependency.self)!
     }
 }

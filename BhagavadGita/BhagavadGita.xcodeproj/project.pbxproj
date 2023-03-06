@@ -162,6 +162,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BBCE2EE29ACE58E004DFC31 /* Build configuration list for PBXNativeTarget "BhagavadGita" */;
 			buildPhases = (
+				7BD68D0B29B6129E008E3635 /* SwiftFormat */,
 				7BD68D0A29B60A44008E3635 /* SwiftGen */,
 				7B85C0B329AE387A001D019B /* SwiftLint */,
 				7BBCE2C129ACE588004DFC31 /* Sources */,
@@ -330,6 +331,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+		7BD68D0B29B6129E008E3635 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
