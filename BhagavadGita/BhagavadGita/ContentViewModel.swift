@@ -16,5 +16,6 @@ class ContentViewModel: ObservableObject {
 
     func onAppear() {
         logger.info("View is loaded")
+        print(API.baseURL)
     }
 }
