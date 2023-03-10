@@ -173,4 +173,5 @@ fi
 
 <img width="771" alt="NowPlaying_と_Item-0_と_Item-0_と_Sound" src="https://user-images.githubusercontent.com/47273077/224272306-83698a5c-312f-45bc-9268-f785c1752309.png">
 
+<img width="1018" alt="スクリーンショット_2023_03_10_18_15" src="https://user-images.githubusercontent.com/47273077/224275360-4adb619c-9cf8-4efe-9910-7fa10adf842b.png">
 
