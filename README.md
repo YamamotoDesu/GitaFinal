@@ -175,3 +175,26 @@ fi
 
 <img width="1018" alt="スクリーンショット_2023_03_10_18_15" src="https://user-images.githubusercontent.com/47273077/224275360-4adb619c-9cf8-4efe-9910-7fa10adf842b.png">
 
+ConfigurationManager.swift
+```swift
+private enum BuildConfiguration {
+    enum Error: Swift.Error {
+        case missingKey, invalidValue
+    }
+
+    static func value<T>(for key: String) throws -> T where T: LosslessStringConvertible {
+        guard let object = Bundle.main.object(forInfoDictionaryKey: key) else {
+            throw Error.missingKey
+        }
+
+        switch object {
+        case let string as String:
+            guard let value = T(string) else { fallthrough }
+            return value
+        default:
+            throw Error.invalidValue
+        }
+    }
+}
+```
+
