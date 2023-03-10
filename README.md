@@ -198,3 +198,7 @@ private enum BuildConfiguration {
 }
 ```
 
+```swift
+ print(API.baseURL)
+```
+
