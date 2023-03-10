@@ -154,3 +154,11 @@ else
   echo "warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat"
 fi
 ```
+
+[Build iOS App from scratch - Part 8- Setup DEV, QA and PROD environment using schemes in Xcode](https://www.youtube.com/watch?v=P4IAh07LGiQ)
+
+<img width="802" alt="スクリーンショット 2023-03-10 17 21 25" src="https://user-images.githubusercontent.com/47273077/224262187-a1eddeb9-4749-4e4f-a73d-d88879189378.png">
+
+<img width="713" alt="スクリーンショット 2023-03-10 17 19 11" src="https://user-images.githubusercontent.com/47273077/224261661-a778524c-5226-4701-a07d-d259679d251e.png">
+
+
