@@ -159,6 +159,10 @@ fi
 
 <img width="787" alt="スクリーンショット 2023-03-10 17 27 07" src="https://user-images.githubusercontent.com/47273077/224263577-3ded8319-6871-4703-8883-1277f8df9c3e.png">
 
+<img width="633" alt="スクリーンショット_2023_03_10_17_29" src="https://user-images.githubusercontent.com/47273077/224264339-b2763d91-0c92-4179-8f05-0b5f8b5d2b16.png">
+
+<img width="823" alt="スクリーンショット_2023_03_10_17_31" src="https://user-images.githubusercontent.com/47273077/224264540-2185d530-a35a-4d26-b41c-1e73a16c6b83.png">
+
 <img width="899" alt="スクリーンショット 2023-03-10 17 25 15" src="https://user-images.githubusercontent.com/47273077/224263146-2c38e397-2bc4-42d6-bd64-baa91b7157ed.png">
 
 <img width="802" alt="スクリーンショット 2023-03-10 17 21 25" src="https://user-images.githubusercontent.com/47273077/224262187-a1eddeb9-4749-4e4f-a73d-d88879189378.png">
