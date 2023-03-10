@@ -157,6 +157,10 @@ fi
 
 [Build iOS App from scratch - Part 8- Setup DEV, QA and PROD environment using schemes in Xcode](https://www.youtube.com/watch?v=P4IAh07LGiQ)
 
+<img width="787" alt="スクリーンショット 2023-03-10 17 27 07" src="https://user-images.githubusercontent.com/47273077/224263577-3ded8319-6871-4703-8883-1277f8df9c3e.png">
+
+<img width="899" alt="スクリーンショット 2023-03-10 17 25 15" src="https://user-images.githubusercontent.com/47273077/224263146-2c38e397-2bc4-42d6-bd64-baa91b7157ed.png">
+
 <img width="802" alt="スクリーンショット 2023-03-10 17 21 25" src="https://user-images.githubusercontent.com/47273077/224262187-a1eddeb9-4749-4e4f-a73d-d88879189378.png">
 
 <img width="713" alt="スクリーンショット 2023-03-10 17 19 11" src="https://user-images.githubusercontent.com/47273077/224261661-a778524c-5226-4701-a07d-d259679d251e.png">
