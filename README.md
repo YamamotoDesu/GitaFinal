@@ -202,7 +202,7 @@ private enum BuildConfiguration {
  print(API.baseURL)
 ```
 
-<img width="1133" alt="スクリーンショット 2023-03-10 19 29 51" src="https://user-images.githubusercontent.com/47273077/224292996-80633d58-f676-4b86-9553-88b302c29034.png">
+<img width="1154" alt="スクリーンショット 2023-03-10 19 32 16" src="https://user-images.githubusercontent.com/47273077/224293530-ed242485-5f37-474b-9a00-d883b5beae36.png">
 
 ```swift
 enum ConfigurationManager {
@@ -219,6 +219,7 @@ enum ConfigurationManager {
         return .qa
         #elseif PROD
         return .prod
+        #endif
     }
 }
 ```
