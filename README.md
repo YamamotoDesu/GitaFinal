@@ -171,3 +171,6 @@ fi
 
 <img width="1157" alt="スクリーンショット_2023_03_10_17_51" src="https://user-images.githubusercontent.com/47273077/224269729-ad95ff24-2ade-4652-8c1f-ecd3f635b681.png">
 
+<img width="771" alt="NowPlaying_と_Item-0_と_Item-0_と_Sound" src="https://user-images.githubusercontent.com/47273077/224272306-83698a5c-312f-45bc-9268-f785c1752309.png">
+
+
