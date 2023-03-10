@@ -202,3 +202,23 @@ private enum BuildConfiguration {
  print(API.baseURL)
 ```
 
+<img width="1133" alt="スクリーンショット 2023-03-10 19 29 51" src="https://user-images.githubusercontent.com/47273077/224292996-80633d58-f676-4b86-9553-88b302c29034.png">
+
+```swift
+enum ConfigurationManager {
+    enum Enviroment {
+        case dev
+        case qa
+        case prod
+    }
+    
+    static var enviroment: Environment {
+        #if DEV
+        return .dev
+        #elseif QA
+        return .qa
+        #elseif PROD
+        return .prod
+    }
+}
+```
