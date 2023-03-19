@@ -223,3 +223,61 @@ enum ConfigurationManager {
     }
 }
 ```
+
+### [Build iOS App from scratch - Part 9- Firebase with DEV, QA and PROD environment](https://www.youtube.com/watch?v=T671dJ_hGpQ&t=635s)
+
+<img width="1322" alt="スクリーンショット_2023_03_19_20_19" src="https://user-images.githubusercontent.com/47273077/226171830-87a131d7-6417-4206-8470-96c99dfba102.png">
+
+```swift
+# Name of the resource we're selectively copying
+GOOGLESERVICE_INFO_PLIST=GoogleService-Info.plist
+
+# Get references to dev and prod versions of the GoogleService-Info.plist
+# NOTE: These should only live on the file system and should NOT be part of the target (since we'll be adding them to the target manually)
+GOOGLESERVICE_INFO_DEV=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Dev/${GOOGLESERVICE_INFO_PLIST}
+GOOGLESERVICE_INFO_PROD=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Prod/${GOOGLESERVICE_INFO_PLIST}
+GOOGLESERVICE_INFO_QA=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Qa/${GOOGLESERVICE_INFO_PLIST}
+
+# Make sure the dev version of GoogleService-Info.plist exists
+echo "Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_DEV}"
+if [ ! -f $GOOGLESERVICE_INFO_DEV ]
+then
+    echo "No Development GoogleService-Info.plist found. Please ensure it's in the proper directory."
+    exit 1
+fi
+
+# Make sure the prod version of GoogleService-Info.plist exists
+echo "Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_PROD}"
+if [ ! -f $GOOGLESERVICE_INFO_PROD ]
+then
+    echo "No Production GoogleService-Info.plist found. Please ensure it's in the proper directory."
+    exit 1
+fi
+
+# Make sure the prod version of GoogleService-Info.plist exists
+echo "Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_PROD}"
+if [ ! -f $GOOGLESERVICE_INFO_QA ]
+then
+    echo "No QA GoogleService-Info.plist found. Please ensure it's in the proper directory."
+    exit 1
+fi
+
+# Get a reference to the destination location for the GoogleService-Info.plist
+PLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app
+echo "Will copy ${GOOGLESERVICE_INFO_PLIST} to final destination: ${PLIST_DESTINATION}"
+
+# Copy over the prod GoogleService-Info.plist for Release builds
+if [ "${CONFIGURATION}" == "Debug-PROD" ]
+then
+    echo "Using ${GOOGLESERVICE_INFO_PROD}"
+    cp "${GOOGLESERVICE_INFO_PROD}" "${PLIST_DESTINATION}"
+elif [ "${CONFIGURATION}" == "Debug-QA" ]
+then
+    echo "Using ${GOOGLESERVICE_INFO_QA}"
+    cp "${GOOGLESERVICE_INFO_QA}" "${PLIST_DESTINATION}"
+else
+    echo "Using ${GOOGLESERVICE_INFO_DEV}"
+    cp "${GOOGLESERVICE_INFO_DEV}" "${PLIST_DESTINATION}"
+fi
+
+```
