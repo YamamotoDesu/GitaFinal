@@ -48,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B10ADED29C724790002D83E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B10ADEF29C724790002D83E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B10ADF129C724790002D83E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B85C0B729AE435F001D019B /* BGLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGLogger.swift; sourceTree = "<group>"; };
 		7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		7B85C0BF29B0B1FF001D019B /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
@@ -101,9 +104,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B10ADEB29C724790002D83E /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				7B10ADEC29C724790002D83E /* Prod */,
+				7B10ADEE29C724790002D83E /* Qa */,
+				7B10ADF029C724790002D83E /* Dev */,
+			);
+			name = Firebase;
+			path = BhagavadGita/Firebase;
+			sourceTree = "<group>";
+		};
+		7B10ADEC29C724790002D83E /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				7B10ADED29C724790002D83E /* GoogleService-Info.plist */,
+			);
+			path = Prod;
+			sourceTree = "<group>";
+		};
+		7B10ADEE29C724790002D83E /* Qa */ = {
+			isa = PBXGroup;
+			children = (
+				7B10ADEF29C724790002D83E /* GoogleService-Info.plist */,
+			);
+			path = Qa;
+			sourceTree = "<group>";
+		};
+		7B10ADF029C724790002D83E /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+				7B10ADF129C724790002D83E /* GoogleService-Info.plist */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
 		7BBCE2BC29ACE588004DFC31 = {
 			isa = PBXGroup;
 			children = (
+				7B10ADEB29C724790002D83E /* Firebase */,
 				7BBCE2C729ACE588004DFC31 /* BhagavadGita */,
 				7BBCE2DD29ACE58E004DFC31 /* BhagavadGitaTests */,
 				7BBCE2E729ACE58E004DFC31 /* BhagavadGitaUITests */,

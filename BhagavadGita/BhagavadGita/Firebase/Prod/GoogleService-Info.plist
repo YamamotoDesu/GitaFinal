@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>692106692315-4asncrkvcnde77ov84mo1m58hccj28ge.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.692106692315-4asncrkvcnde77ov84mo1m58hccj28ge</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC8Fbj8K_L_foakvg4bK6eq1gVt73I7uhA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>692106692315</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.codewithkyo.BhagavadGita.prod</string>
+	<key>PROJECT_ID</key>
+	<string>bhagavadgita-d7394</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bhagavadgita-d7394.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:692106692315:ios:97f23df5e886d13d32eefe</string>
+</dict>
+</plist>
