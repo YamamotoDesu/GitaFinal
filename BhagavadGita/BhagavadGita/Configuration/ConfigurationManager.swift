@@ -13,11 +13,13 @@ private enum BuildConfiguration {
     }
 
     static func value<T>(for key: String) throws -> T where T: LosslessStringConvertible {
-        throw Error.missingKey
         guard let object = Bundle.main.object(forInfoDictionaryKey: key) else {
+            throw Error.missingKey
         }
 
         switch object {
+        case let value as T:
+            return value
         case let string as String:
             guard let value = T(string) else { fallthrough }
             return value
@@ -43,14 +45,14 @@ enum ConfigurationManager {
         case qa
         case prod
     }
-    
-    static var enviroment: Environment {
+
+    static var enviroment: Enviroment {
         #if DEV
-        return .dev
+            return .dev
         #elseif QA
-        return .qa
+            return .qa
         #elseif PROD
-        return .prod
+            return .prod
         #endif
     }
 }
