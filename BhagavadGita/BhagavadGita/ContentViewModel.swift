@@ -17,5 +17,7 @@ class ContentViewModel: ObservableObject {
     func onAppear() {
         logger.info("View is loaded")
         print(API.baseURL)
+
+        FirebaseAnalyticsManager.shared.logEvent(name: "onboarding_test_1", param: [:])
     }
 }

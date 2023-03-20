@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7B10ADF429C7DE100002D83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10ADF329C7DE100002D83E /* AppDelegate.swift */; };
-		7B10ADF729C7E0360002D83E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7B10ADF629C7E0360002D83E /* FirebaseAnalytics */; };
-		7B10ADF929C7E0360002D83E /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7B10ADF829C7E0360002D83E /* FirebaseCrashlytics */; };
+		7B10ADFC29C80F370002D83E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7B10ADFB29C80F370002D83E /* FirebaseAnalytics */; };
+		7B10ADFE29C80F370002D83E /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7B10ADFD29C80F370002D83E /* FirebaseCrashlytics */; };
 		7B85C0B629AE41D5001D019B /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 7B85C0B529AE41D5001D019B /* SwiftyBeaver */; };
 		7B85C0B829AE4360001D019B /* BGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0B729AE435F001D019B /* BGLogger.swift */; };
 		7B85C0BB29AF63E1001D019B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */; };
-		7B85C0BE29B0B188001D019B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7B85C0BD29B0B188001D019B /* Swinject */; };
 		7B85C0C029B0B1FF001D019B /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0BF29B0B1FF001D019B /* Injection.swift */; };
 		7B85C0C329B0C968001D019B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B85C0C529B0C968001D019B /* Localizable.strings */; };
 		7BBCE2C929ACE588004DFC31 /* BhagavadGitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBCE2C829ACE588004DFC31 /* BhagavadGitaApp.swift */; };
@@ -26,6 +25,8 @@
 		7BBCE2E929ACE58E004DFC31 /* BhagavadGitaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBCE2E829ACE58E004DFC31 /* BhagavadGitaUITests.swift */; };
 		7BBCE2EB29ACE58E004DFC31 /* BhagavadGitaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBCE2EA29ACE58E004DFC31 /* BhagavadGitaUITestsLaunchTests.swift */; };
 		7BBCE2F929AE2F66004DFC31 /* BGUtility in Frameworks */ = {isa = PBXBuildFile; productRef = 7BBCE2F829AE2F66004DFC31 /* BGUtility */; };
+		7BCFBAC829C82BF50009ABA0 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7BCFBAC729C82BF50009ABA0 /* Swinject */; };
+		7BCFBACA29C831C70009ABA0 /* FirebaseAnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCFBAC929C831C70009ABA0 /* FirebaseAnalyticsManager.swift */; };
 		7BD68D0929B606AC008E3635 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD68D0829B606AC008E3635 /* Strings+Generated.swift */; };
 		7BD68DAC29BB25A9008E3635 /* Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7BD68DAB29BB25A9008E3635 /* Dev.xcconfig */; };
 		7BD68DAF29BB2665008E3635 /* PROD.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7BD68DAE29BB2665008E3635 /* PROD.xcconfig */; };
@@ -72,6 +73,7 @@
 		7BBCE2E429ACE58E004DFC31 /* BhagavadGitaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BhagavadGitaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BBCE2E829ACE58E004DFC31 /* BhagavadGitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITests.swift; sourceTree = "<group>"; };
 		7BBCE2EA29ACE58E004DFC31 /* BhagavadGitaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7BCFBAC929C831C70009ABA0 /* FirebaseAnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsManager.swift; sourceTree = "<group>"; };
 		7BD68D0829B606AC008E3635 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = SOURCE_ROOT; };
 		7BD68DAB29BB25A9008E3635 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		7BD68DAD29BB25F5008E3635 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
@@ -86,10 +88,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BBCE2F929AE2F66004DFC31 /* BGUtility in Frameworks */,
+				7BCFBAC829C82BF50009ABA0 /* Swinject in Frameworks */,
 				7B85C0B629AE41D5001D019B /* SwiftyBeaver in Frameworks */,
-				7B10ADF929C7E0360002D83E /* FirebaseCrashlytics in Frameworks */,
-				7B10ADF729C7E0360002D83E /* FirebaseAnalytics in Frameworks */,
-				7B85C0BE29B0B188001D019B /* Swinject in Frameworks */,
+				7B10ADFE29C80F370002D83E /* FirebaseCrashlytics in Frameworks */,
+				7B10ADFC29C80F370002D83E /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +184,7 @@
 				7B85C0BF29B0B1FF001D019B /* Injection.swift */,
 				7B85C0C529B0C968001D019B /* Localizable.strings */,
 				7B10ADF329C7DE100002D83E /* AppDelegate.swift */,
+				7BCFBAC929C831C70009ABA0 /* FirebaseAnalyticsManager.swift */,
 			);
 			path = BhagavadGita;
 			sourceTree = "<group>";
@@ -245,9 +248,9 @@
 			packageProductDependencies = (
 				7BBCE2F829AE2F66004DFC31 /* BGUtility */,
 				7B85C0B529AE41D5001D019B /* SwiftyBeaver */,
-				7B85C0BD29B0B188001D019B /* Swinject */,
-				7B10ADF629C7E0360002D83E /* FirebaseAnalytics */,
-				7B10ADF829C7E0360002D83E /* FirebaseCrashlytics */,
+				7B10ADFB29C80F370002D83E /* FirebaseAnalytics */,
+				7B10ADFD29C80F370002D83E /* FirebaseCrashlytics */,
+				7BCFBAC729C82BF50009ABA0 /* Swinject */,
 			);
 			productName = BhagavadGita;
 			productReference = 7BBCE2C529ACE588004DFC31 /* BhagavadGita.app */;
@@ -325,8 +328,8 @@
 			packageReferences = (
 				7BBCE2F729AE2F66004DFC31 /* XCRemoteSwiftPackageReference "BGUtility" */,
 				7B85C0B429AE41D4001D019B /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
-				7B85C0BC29B0B188001D019B /* XCRemoteSwiftPackageReference "Swinject" */,
-				7B10ADF529C7E0350002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7B10ADFA29C80F360002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7BCFBAC629C82BF40009ABA0 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 7BBCE2C629ACE588004DFC31 /* Products */;
 			projectDirPath = "";
@@ -386,7 +389,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Name of the resource we're selectively copying\nGOOGLESERVICE_INFO_PLIST=GoogleService-Info.plist\n\n# Get references to dev and prod versions of the GoogleService-Info.plist\n# NOTE: These should only live on the file system and should NOT be part of the target (since we'll be adding them to the target manually)\nGOOGLESERVICE_INFO_DEV=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Dev/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_PROD=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Prod/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_QA=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Qa/${GOOGLESERVICE_INFO_PLIST}\n\n# Make sure the dev version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_DEV}\"\nif [ ! -f $GOOGLESERVICE_INFO_DEV ]\nthen\n    echo \"No Development GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n\n# Make sure the prod version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_PROD}\"\nif [ ! -f $GOOGLESERVICE_INFO_PROD ]\nthen\n    echo \"No Production GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n\n# Make sure the prod version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_PROD}\"\nif [ ! -f $GOOGLESERVICE_INFO_QA ]\nthen\n    echo \"No QA GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n\n# Get a reference to the destination location for the GoogleService-Info.plist\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Will copy ${GOOGLESERVICE_INFO_PLIST} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy over the prod GoogleService-Info.plist for Release builds\nif [ \"${CONFIGURATION}\" == \"Debug-PROD\" ]\nthen\n    echo \"Using ${GOOGLESERVICE_INFO_PROD}\"\n    cp \"${GOOGLESERVICE_INFO_PROD}\" \"${PLIST_DESTINATION}\"\nelif [ \"${CONFIGURATION}\" == \"Debug-QA\" ]\nthen\n    echo \"Using ${GOOGLESERVICE_INFO_QA}\"\n    cp \"${GOOGLESERVICE_INFO_QA}\" \"${PLIST_DESTINATION}\"\nelse\n    echo \"Using ${GOOGLESERVICE_INFO_DEV}\"\n    cp \"${GOOGLESERVICE_INFO_DEV}\" \"${PLIST_DESTINATION}\"\nfi\n\n";
+			shellScript = "# Name of the resource we're selectively copying\nGOOGLESERVICE_INFO_PLIST=GoogleService-Info.plist\n\n# Get references to dev and prod versions of the GoogleService-Info.plist\n# NOTE: These should only live on the file system and should NOT be part of the target (since we'll be adding them to the target manually)\nGOOGLESERVICE_INFO_DEV=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Dev/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_PROD=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Prod/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_QA=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Qa/${GOOGLESERVICE_INFO_PLIST}\n\n# Make sure the dev version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_DEV}\"\nif [ ! -f $GOOGLESERVICE_INFO_DEV ]\nthen\n    echo \"No Development GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n\n# Make sure the prod version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_PROD}\"\nif [ ! -f $GOOGLESERVICE_INFO_PROD ]\nthen\n    echo \"No Production GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n\n# Make sure the prod version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_PROD}\"\nif [ ! -f $GOOGLESERVICE_INFO_QA ]\nthen\n    echo \"No QA GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n\n# Get a reference to the destination location for the GoogleService-Info.plist\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Will copy ${GOOGLESERVICE_INFO_PLIST} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy over the prod GoogleService-Info.plist for Release builds\nif [ \"${CONFIGURATION}\" == \"Debug-PROD\" ]\nthen\n    echo \"Using ${GOOGLESERVICE_INFO_PROD}\"\n    cp \"${GOOGLESERVICE_INFO_PROD}\" \"${PLIST_DESTINATION}\"\nelif [ \"${CONFIGURATION}\" == \"Debug-QA\" ]\nthen\n    echo \"Using ${GOOGLESERVICE_INFO_QA}\"\n    cp \"${GOOGLESERVICE_INFO_QA}\" \"${PLIST_DESTINATION}\"\nelse\n    echo \"Using ${GOOGLESERVICE_INFO_DEV}\"\n    cp \"${GOOGLESERVICE_INFO_DEV}\" \"${PLIST_DESTINATION}\"\n    echo \"${CONFIGURATION}\"\nfi\n\n";
 		};
 		7B85C0B329AE387A001D019B /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -459,6 +462,7 @@
 				7BD68D0929B606AC008E3635 /* Strings+Generated.swift in Sources */,
 				7B10ADF429C7DE100002D83E /* AppDelegate.swift in Sources */,
 				7BBCE2C929ACE588004DFC31 /* BhagavadGitaApp.swift in Sources */,
+				7BCFBACA29C831C70009ABA0 /* FirebaseAnalyticsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1327,12 +1331,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7B10ADF529C7E0350002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		7B10ADFA29C80F360002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 		7B85C0B429AE41D4001D019B /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
@@ -1343,14 +1347,6 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		7B85C0BC29B0B188001D019B /* XCRemoteSwiftPackageReference "Swinject" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Swinject/Swinject";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
 		7BBCE2F729AE2F66004DFC31 /* XCRemoteSwiftPackageReference "BGUtility" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/YamamotoDesu/BGUtility.git";
@@ -1359,17 +1355,25 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		7BCFBAC629C82BF40009ABA0 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7B10ADF629C7E0360002D83E /* FirebaseAnalytics */ = {
+		7B10ADFB29C80F370002D83E /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7B10ADF529C7E0350002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 7B10ADFA29C80F360002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		7B10ADF829C7E0360002D83E /* FirebaseCrashlytics */ = {
+		7B10ADFD29C80F370002D83E /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7B10ADF529C7E0350002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 7B10ADFA29C80F360002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
 		};
 		7B85C0B529AE41D5001D019B /* SwiftyBeaver */ = {
@@ -1377,15 +1381,15 @@
 			package = 7B85C0B429AE41D4001D019B /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
 			productName = SwiftyBeaver;
 		};
-		7B85C0BD29B0B188001D019B /* Swinject */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7B85C0BC29B0B188001D019B /* XCRemoteSwiftPackageReference "Swinject" */;
-			productName = Swinject;
-		};
 		7BBCE2F829AE2F66004DFC31 /* BGUtility */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7BBCE2F729AE2F66004DFC31 /* XCRemoteSwiftPackageReference "BGUtility" */;
 			productName = BGUtility;
+		};
+		7BCFBAC729C82BF50009ABA0 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BCFBAC629C82BF40009ABA0 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 
