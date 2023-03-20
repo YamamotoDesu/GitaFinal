@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B10ADF429C7DE100002D83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10ADF329C7DE100002D83E /* AppDelegate.swift */; };
 		7B85C0B629AE41D5001D019B /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 7B85C0B529AE41D5001D019B /* SwiftyBeaver */; };
 		7B85C0B829AE4360001D019B /* BGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0B729AE435F001D019B /* BGLogger.swift */; };
 		7B85C0BB29AF63E1001D019B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */; };
@@ -51,6 +52,7 @@
 		7B10ADED29C724790002D83E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B10ADEF29C724790002D83E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B10ADF129C724790002D83E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B10ADF329C7DE100002D83E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B85C0B729AE435F001D019B /* BGLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGLogger.swift; sourceTree = "<group>"; };
 		7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		7B85C0BF29B0B1FF001D019B /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */,
 				7B85C0BF29B0B1FF001D019B /* Injection.swift */,
 				7B85C0C529B0C968001D019B /* Localizable.strings */,
+				7B10ADF329C7DE100002D83E /* AppDelegate.swift */,
 			);
 			path = BhagavadGita;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				7B85C0B829AE4360001D019B /* BGLogger.swift in Sources */,
 				7BBCE2CB29ACE588004DFC31 /* ContentView.swift in Sources */,
 				7BD68D0929B606AC008E3635 /* Strings+Generated.swift in Sources */,
+				7B10ADF429C7DE100002D83E /* AppDelegate.swift in Sources */,
 				7BBCE2C929ACE588004DFC31 /* BhagavadGitaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
