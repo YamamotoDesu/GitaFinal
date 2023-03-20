@@ -310,6 +310,7 @@ class FirebaseAnalyticsManager {
 ```
 
 ✅Decouple 
+
 AnalyticsManager.swift
 ```swift
 import Foundation
