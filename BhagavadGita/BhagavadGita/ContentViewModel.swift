@@ -9,6 +9,7 @@ import Foundation
 
 class ContentViewModel: ObservableObject {
     @Injected private var logger: BGLoggerType
+    @Injected private var analyticsManager: AnalyticsManagerProtocol
 
 //    init(logger: BGLoggerType = BGLogger()) {
 //        self.logger = logger
@@ -17,7 +18,7 @@ class ContentViewModel: ObservableObject {
     func onAppear() {
         logger.info("View is loaded")
         print(API.baseURL)
-
-        FirebaseAnalyticsManager.shared.logEvent(name: "onboarding_test_1", param: [:])
+//        analyticsManager.logEvent(event: Event(name: "onbording_test_2"))
+        analyticsManager.logEvent(event: AnalyticsEvent.clickButtonEvent)
     }
 }

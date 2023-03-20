@@ -27,6 +27,7 @@
 		7BBCE2F929AE2F66004DFC31 /* BGUtility in Frameworks */ = {isa = PBXBuildFile; productRef = 7BBCE2F829AE2F66004DFC31 /* BGUtility */; };
 		7BCFBAC829C82BF50009ABA0 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7BCFBAC729C82BF50009ABA0 /* Swinject */; };
 		7BCFBACA29C831C70009ABA0 /* FirebaseAnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCFBAC929C831C70009ABA0 /* FirebaseAnalyticsManager.swift */; };
+		7BCFBACC29C834B90009ABA0 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCFBACB29C834B90009ABA0 /* AnalyticsManager.swift */; };
 		7BD68D0929B606AC008E3635 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD68D0829B606AC008E3635 /* Strings+Generated.swift */; };
 		7BD68DAC29BB25A9008E3635 /* Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7BD68DAB29BB25A9008E3635 /* Dev.xcconfig */; };
 		7BD68DAF29BB2665008E3635 /* PROD.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7BD68DAE29BB2665008E3635 /* PROD.xcconfig */; };
@@ -74,6 +75,7 @@
 		7BBCE2E829ACE58E004DFC31 /* BhagavadGitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITests.swift; sourceTree = "<group>"; };
 		7BBCE2EA29ACE58E004DFC31 /* BhagavadGitaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7BCFBAC929C831C70009ABA0 /* FirebaseAnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsManager.swift; sourceTree = "<group>"; };
+		7BCFBACB29C834B90009ABA0 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		7BD68D0829B606AC008E3635 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = SOURCE_ROOT; };
 		7BD68DAB29BB25A9008E3635 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		7BD68DAD29BB25F5008E3635 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				7B85C0C529B0C968001D019B /* Localizable.strings */,
 				7B10ADF329C7DE100002D83E /* AppDelegate.swift */,
 				7BCFBAC929C831C70009ABA0 /* FirebaseAnalyticsManager.swift */,
+				7BCFBACB29C834B90009ABA0 /* AnalyticsManager.swift */,
 			);
 			path = BhagavadGita;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BCFBACC29C834B90009ABA0 /* AnalyticsManager.swift in Sources */,
 				7B85C0C029B0B1FF001D019B /* Injection.swift in Sources */,
 				7BBCE2D529ACE58D004DFC31 /* BhagavadGita.xcdatamodeld in Sources */,
 				7BD68DB329BB2DAA008E3635 /* ConfigurationManager.swift in Sources */,

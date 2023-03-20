@@ -8,10 +8,10 @@
 import Firebase
 import Foundation
 
-class FirebaseAnalyticsManager {
-    static let shared = FirebaseAnalyticsManager()
+final class FirebaseAnalyticsManager: AnalyticsEventLoggerProtocol {
+    func initialize() {}
 
-    func logEvent(name: String, param: [String: Any]) {
-        Analytics.logEvent(name, parameters: param)
+    func logEvent(event: EventProtocol) {
+        Analytics.logEvent(event.name, parameters: event.param)
     }
 }
