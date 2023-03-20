@@ -281,3 +281,32 @@ else
 fi
 
 ```
+
+### [Build iOS App from scratch - Part 10-Analytics Manager- System Design Interview iOS](https://www.youtube.com/watch?v=vYbPrdmxKU4)
+
+Using a singleton
+
+```swift
+class ContentViewModel: ObservableObject {
+    @Injected private var logger: BGLoggerType
+
+    func onAppear() {
+
+        FirebaseAnalyticsManager.shared.logEvent(name: "onboarding_test_1", param: [:])
+    }
+}
+
+
+import Firebase
+import Foundation
+
+class FirebaseAnalyticsManager {
+    static let shared = FirebaseAnalyticsManager()
+
+    func logEvent(name: String, param: [String: Any]) {
+        Analytics.logEvent(name, parameters: param)
+    }
+}
+```
+
+
