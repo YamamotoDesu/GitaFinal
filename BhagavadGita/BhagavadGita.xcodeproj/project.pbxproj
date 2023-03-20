@@ -111,8 +111,7 @@
 				7B10ADEE29C724790002D83E /* Qa */,
 				7B10ADF029C724790002D83E /* Dev */,
 			);
-			name = Firebase;
-			path = BhagavadGita/Firebase;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		7B10ADEC29C724790002D83E /* Prod */ = {
@@ -142,7 +141,6 @@
 		7BBCE2BC29ACE588004DFC31 = {
 			isa = PBXGroup;
 			children = (
-				7B10ADEB29C724790002D83E /* Firebase */,
 				7BBCE2C729ACE588004DFC31 /* BhagavadGita */,
 				7BBCE2DD29ACE58E004DFC31 /* BhagavadGitaTests */,
 				7BBCE2E729ACE58E004DFC31 /* BhagavadGitaUITests */,
@@ -163,6 +161,7 @@
 		7BBCE2C729ACE588004DFC31 /* BhagavadGita */ = {
 			isa = PBXGroup;
 			children = (
+				7B10ADEB29C724790002D83E /* Firebase */,
 				7BD68DB129BB2BBD008E3635 /* Info.plist */,
 				7BD68DAA29BB237B008E3635 /* Configuration */,
 				7BD68D0829B606AC008E3635 /* Strings+Generated.swift */,
