@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7B10ADF429C7DE100002D83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10ADF329C7DE100002D83E /* AppDelegate.swift */; };
+		7B10ADF729C7E0360002D83E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7B10ADF629C7E0360002D83E /* FirebaseAnalytics */; };
+		7B10ADF929C7E0360002D83E /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7B10ADF829C7E0360002D83E /* FirebaseCrashlytics */; };
 		7B85C0B629AE41D5001D019B /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 7B85C0B529AE41D5001D019B /* SwiftyBeaver */; };
 		7B85C0B829AE4360001D019B /* BGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0B729AE435F001D019B /* BGLogger.swift */; };
 		7B85C0BB29AF63E1001D019B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85C0BA29AF63E1001D019B /* ContentViewModel.swift */; };
@@ -85,6 +87,8 @@
 			files = (
 				7BBCE2F929AE2F66004DFC31 /* BGUtility in Frameworks */,
 				7B85C0B629AE41D5001D019B /* SwiftyBeaver in Frameworks */,
+				7B10ADF929C7E0360002D83E /* FirebaseCrashlytics in Frameworks */,
+				7B10ADF729C7E0360002D83E /* FirebaseAnalytics in Frameworks */,
 				7B85C0BE29B0B188001D019B /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +246,8 @@
 				7BBCE2F829AE2F66004DFC31 /* BGUtility */,
 				7B85C0B529AE41D5001D019B /* SwiftyBeaver */,
 				7B85C0BD29B0B188001D019B /* Swinject */,
+				7B10ADF629C7E0360002D83E /* FirebaseAnalytics */,
+				7B10ADF829C7E0360002D83E /* FirebaseCrashlytics */,
 			);
 			productName = BhagavadGita;
 			productReference = 7BBCE2C529ACE588004DFC31 /* BhagavadGita.app */;
@@ -320,6 +326,7 @@
 				7BBCE2F729AE2F66004DFC31 /* XCRemoteSwiftPackageReference "BGUtility" */,
 				7B85C0B429AE41D4001D019B /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
 				7B85C0BC29B0B188001D019B /* XCRemoteSwiftPackageReference "Swinject" */,
+				7B10ADF529C7E0350002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 7BBCE2C629ACE588004DFC31 /* Products */;
 			projectDirPath = "";
@@ -1320,6 +1327,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7B10ADF529C7E0350002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		7B85C0B429AE41D4001D019B /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver";
@@ -1347,6 +1362,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7B10ADF629C7E0360002D83E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B10ADF529C7E0350002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7B10ADF829C7E0360002D83E /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B10ADF529C7E0350002D83E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
 		7B85C0B529AE41D5001D019B /* SwiftyBeaver */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7B85C0B429AE41D4001D019B /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
