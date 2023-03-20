@@ -284,7 +284,7 @@ fi
 
 ### [Build iOS App from scratch - Part 10-Analytics Manager- System Design Interview iOS](https://www.youtube.com/watch?v=vYbPrdmxKU4)
 
-Using a singleton
+✅Part 1: Using a singleton
 
 ```swift
 class ContentViewModel: ObservableObject {
@@ -309,7 +309,7 @@ class FirebaseAnalyticsManager {
 }
 ```
 
-Decouple 
+✅Decouple 
 AnalyticsManager.swift
 ```swift
 import Foundation
